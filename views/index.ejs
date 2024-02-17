@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <title>AniSearch</title>
+  </head>
+  <body>
+    <div class="s131">
+      <form action="/search" method="POST">
+        <div class="inner-form">
+          <div class="input-field first-wrap">
+            <input name="title" id="search" type="text" placeholder="What are anime you looking for?" />
+          </div>
+          <div class="input-field second-wrap">
+            <div class="input-select">
+              <select data-trigger="" name="category">
+                <option value="" placeholder="">CATEGORY</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="romance">Romance</option>
+                <option value="horro">Horror</option>
+                <option value="isekai">Isekai</option>
+                <option value="shonen">Shonen</option>
+                <option value="mecha">Mecha</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="submit">SEARCH</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/extention/choices.js"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false
+      });
+
+    </script>
+  </body>
+</html>
